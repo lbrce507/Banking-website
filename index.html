@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Banking Exam Syllabus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow: auto;
+            background: linear-gradient(135deg, #4a6fa5, #8a9cc2, #d0e1f9);
+            background-size: 200%;
+            animation: calmShift 20s ease-in-out infinite;
+            color: #333;
+        }
+
+        /* Subtle background gradient animation */
+        @keyframes calmShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Central focus glow */
+        .glow {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: clamp(200px, 30vw, 400px);
+            height: clamp(200px, 30vw, 400px);
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: softPulse 6s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        @keyframes softPulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Subtle floating elements for study vibe */
+        .study-element {
+            position: fixed;
+            background: rgba(255,255,255,0.5);
+            border-radius: 50%;
+            animation: drift 15s infinite ease-in-out;
+            z-index: 1;
+        }
+
+        .study-element:nth-child(1) { width: 15px; height: 15px; top: 15%; left: 25%; animation-duration: 12s; }
+        .study-element:nth-child(2) { width: 10px; height: 10px; top: 40%; left: 80%; animation-duration: 18s; }
+        .study-element:nth-child(3) { width: 20px; height: 20px; top: 70%; left: 15%; animation-duration: 14s; }
+        .study-element:nth-child(4) { width: 12px; height: 12px; top: 85%; left: 60%; animation-duration: 16s; }
+
+        @keyframes drift {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(30px, -30px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Syllabus container */
+        .syllabus-container {
+            position: relative;
+            max-width: clamp(320px, 90vw, 1200px);
+            margin: 50px auto;
+            padding: clamp(15px, 3vw, 20px);
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #2a4d69;
+            margin-bottom: clamp(15px, 3vw, 20px);
+        }
+
+        h1 {
+            font-size: clamp(1.6em, 5vw, 2.2em);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: clamp(1.4em, 4vw, 1.8em);
+            border-bottom: 2px solid #4a6fa5;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: clamp(1.1em, 3.5vw, 1.4em);
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: clamp(15px, 3vw, 20px);
+            color: #333;
+            font-size: clamp(0.9em, 2.5vw, 1em);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: clamp(20px, 4vw, 30px);
+            background: #fff;
+            font-size: clamp(0.85em, 2.2vw, 0.95em);
+        }
+
+        th, td {
+            padding: clamp(8px, 2vw, 12px);
+            text-align: left;
+            border: 1px solid #d0e1f9;
+            vertical-align: top;
+        }
+
+        th {
+            background: #4a6fa5;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        td {
+            background: #f9fbff;
+        }
+
+        tr {
+            transition: background 0.3s;
+        }
+
+        tr:hover {
+            background: #e6f0fa;
+        }
+
+        /* Responsive table adjustments */
+        @media (max-width: 768px) {
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            thead {
+                display: none;
+            }
+
+            tr {
+                display: block;
+                margin-bottom: 10px;
+                border-bottom: 2px solid #d0e1f9;
+            }
+
+            td {
+                display: block;
+                text-align: left;
+                padding: 10px;
+                position: relative;
+                white-space: normal;
+            }
+
+            td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                color: #2a4d69;
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            table {
+                font-size: clamp(0.75em, 2vw, 0.85em);
+            }
+
+            th, td {
+                padding: clamp(6px, 1.5vw, 8px);
+            }
+        }
+
+        /* Resources section styling */
+        .resources-section {
+            margin-bottom: clamp(30px, 5vw, 40px);
+        }
+
+        .resources-section ul {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .resources-section li {
+            margin-bottom: 10px;
+            font-size: clamp(0.9em, 2.5vw, 1.1em);
+            color: #333;
+        }
+
+        .resources-section a {
+            color: #2a4d69;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .resources-section a:hover {
+            color: #4a6fa5;
+        }
+
+        /* Performance optimizations */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .syllabus-container {
+                margin: clamp(15px, 3vw, 20px);
+                padding: clamp(10px, 2vw, 15px);
+            }
+
+            .glow {
+                width: clamp(150px, 25vw, 200px);
+                height: clamp(150px, 25vw, 200px);
+            }
+
+            h1 {
+                font-size: clamp(1.4em, 4.5vw, 1.8em);
+            }
+
+            h2 {
+                font-size: clamp(1.2em, 4vw, 1.6em);
+            }
+
+            h3 {
+                font-size: clamp(1em, 3.5vw, 1.2em);
+            }
+
+            .resources-section li {
+                font-size: clamp(0.85em, 2.5vw, 1em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div class="study-element"></div>
+    <div class="study-element"></div>
+    <div class="study-element"></div>
+    <div class="study-element"></div>
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="syllabus-container">
+        <h1>2025 Banking Exam Syllabus</h1>
+
+        <!-- Bank PO Syllabus -->
+        <h2>Bank PO Syllabus</h2>
+        <p>The Bank PO exam is conducted for the post of Probationary Officer in State Bank of India and other banks participating in the IBPS PO recruitment. Over the years, lakhs of candidates have been drawn towards this sector, especially the Officer’s category, due to its permanent job nature, high salary, and additional perks.</p>
+        
+        <h3>Bank PO Exam Pattern and Syllabus</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bank PO Syllabus</th>
+                    <th>Level of Exam</th>
+                    <th>Subjects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Bank PO Syllabus">SBI PO Syllabus</td>
+                    <td data-label="Level of Exam">Preliminary Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude<br>English Language</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank PO Syllabus"></td>
+                    <td data-label="Level of Exam">Mains Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude<br>English Language<br>General Awareness</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank PO Syllabus"></td>
+                    <td data-label="Level of Exam">Interview</td>
+                    <td data-label="Subjects">—</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank PO Syllabus">IBPS PO Syllabus</td>
+                    <td data-label="Level of Exam">Preliminary Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude<br>English Language</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank PO Syllabus"></td>
+                    <td data-label="Level of Exam">Mains Exam</td>
+                    <td data-label="Subjects">Reasoning Ability/Computer Knowledge<br>Quantitative Aptitude<br>English Language<br>General Awareness</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank PO Syllabus"></td>
+                    <td data-label="Level of Exam">Interview</td>
+                    <td data-label="Subjects">—</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank PO Syllabus">IBPS RRB PO</td>
+                    <td data-label="Level of Exam">Preliminary Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank PO Syllabus"></td>
+                    <td data-label="Level of Exam">Mains Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude<br>English/Hindi Language<br>Computer Knowledge<br>General Awareness</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank PO Syllabus"></td>
+                    <td data-label="Level of Exam">Interview</td>
+                    <td data-label="Subjects">—</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Bank PO Syllabus (Section-wise)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reasoning Ability</th>
+                    <th>Quantitative Aptitude</th>
+                    <th>Computer Knowledge</th>
+                    <th>English Language</th>
+                    <th>General Awareness</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Reasoning Ability">Coding & Decoding<br>Puzzles<br>Seating Arrangement<br>Logical Reasoning<br>Ranking and Order<br>Alphanumeric Series<br>Data Sufficiency<br>Syllogism<br>Input and Output<br>Statement, Argument & Assumption<br>Reasoning Analogy<br>Reasoning Inequality</td>
+                    <td data-label="Quantitative Aptitude">Simplification and Approximation<br>Profit & Loss<br>Number Series<br>Quadratic Equations<br>Problems on Ages<br>Boat and Stream<br>Data Interpretation<br>Speed, Time & Distance<br>Percentage<br>Ratio & Proportion<br>Number System<br>Simple & Compound Interest<br>Probability<br>Mensuration<br>Mixture & Allegations<br>Time and Work<br>Pipes and Cistern<br>Problems on Trains</td>
+                    <td data-label="Computer Knowledge">Memory<br>Input & Output Devices<br>Computer Fundamentals<br>Internet<br>Shortcut Keys<br>Computer-Related Terms<br>Computer Abbreviations<br>Computer Hardware and Software<br>Operating System<br>Basic Computer Networking<br>Microsoft Windows<br>Microsoft Office<br>Types of Computers<br>Cloud Computing<br>High-Level Computer Languages<br>OSI Model<br>Database Management System (DBMS)<br>TCP/IP Model</td>
+                    <td data-label="English Language">Reading Comprehension<br>Cloze Test<br>Fill in the Blanks<br>Tenses Rules<br>Sentence Rearrangement/Jumbled Sentences<br>Error Detection<br>Preposition Rules<br>Paragraph Completion<br>Idioms & Phrases<br>Essay & Letter Writing for Descriptive Exam</td>
+                    <td data-label="General Awareness">Banking Awareness<br>Financial Knowledge Status<br>Current Events Across the World<br>Financial Institutions and Their Headquarters<br>Static General Knowledge</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Bank Clerk Syllabus -->
+        <h2>Bank Clerk Syllabus</h2>
+        <p>The bank clerk exam is conducted for clerical posts and is a sought-after job profile for candidates in India. The exam is conducted annually, and the exam pattern is similar to the Bank PO exam. The bank clerk syllabus is also quite similar to other bank exams.</p>
+        
+        <h3>Bank Clerk Exam Pattern and Syllabus</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bank Clerk Syllabus</th>
+                    <th>Level of Exam</th>
+                    <th>Subjects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Bank Clerk Syllabus">SBI Clerk Syllabus</td>
+                    <td data-label="Level of Exam">Preliminary Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude<br>English Language</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank Clerk Syllabus"></td>
+                    <td data-label="Level of Exam">Mains Exam</td>
+                    <td data-label="Subjects">Reasoning Ability & Computer Knowledge<br>Quantitative Aptitude<br>English Language<br>General Awareness</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank Clerk Syllabus">IBPS Clerk Syllabus</td>
+                    <td data-label="Level of Exam">Preliminary Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude<br>English Language</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank Clerk Syllabus"></td>
+                    <td data-label="Level of Exam">Mains Exam</td>
+                    <td data-label="Subjects">Reasoning Ability & Computer Knowledge<br>Quantitative Aptitude<br>English Language<br>General Awareness</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank Clerk Syllabus"></td>
+                    <td data-label="Level of Exam">Interview</td>
+                    <td data-label="Subjects">—</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank Clerk Syllabus">IBPS RRB Clerk</td>
+                    <td data-label="Level of Exam">Preliminary Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank Clerk Syllabus"></td>
+                    <td data-label="Level of Exam">Mains Exam</td>
+                    <td data-label="Subjects">Reasoning Ability<br>Quantitative Aptitude<br>Financial Awareness<br>Computer Knowledge<br>English/Hindi Language</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Bank Clerk Syllabus (Section-wise)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>English Language</th>
+                    <th>Quantitative Aptitude</th>
+                    <th>Reasoning Ability</th>
+                    <th>Computer Knowledge</th>
+                    <th>General Awareness</th>
+                    <th>Financial Awareness</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="English Language">Reading Comprehension<br>Cloze Test<br>Fill in the Blanks<br>Match the Columns<br>Phase Replacement<br>Error Detection<br>Jumbled Sentences<br>Rearrangement</td>
+                    <td data-label="Quantitative Aptitude">Profit and Loss<br>Permutation and Combination<br>Percentage<br>Mixtures and Allegations<br>Probability<br>Mensuration<br>Data Interpretation<br>Upstream and Downstream<br>Quadratic Equations<br>Approximation<br>Simplification<br>Age Problems<br>Number System<br>Speed, Distance and Time</td>
+                    <td data-label="Reasoning Ability">Puzzles<br>Seating Arrangement<br>Alphanumeric Series<br>Data Sufficiency<br>Coding and Decoding<br>Blood Relations<br>Logical Reasoning<br>Directions and Displacement<br>Order and Ranking</td>
+                    <td data-label="Computer Knowledge">Internet<br>Memory<br>Software and Hardware<br>Input and Output Devices<br>Computer Fundamentals<br>Computer Abbreviations and Terms<br>Basic Computer Networking<br>Shortcut Keys</td>
+                    <td data-label="General Awareness">Static GK<br>Current Events Across the World<br>International and National Organisations and Their Headquarters</td>
+                    <td data-label="Financial Awareness">Financial Knowledge<br>Economic Terms<br>Financial Institutions<br>Financial News<br>Economic Growth and Development</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Bank SO Syllabus -->
+        <h2>Bank SO Syllabus</h2>
+        <p>Apart from Probationary Officer and Clerk, banks conduct an examination for Specialist Officers (SO) for candidates specialized in law, IT, Rajbhasha, Chartered Accountant, Agriculture, Marketing, and Human Resources.</p>
+        
+        <h3>Bank SO Exam Pattern and Syllabus</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bank SO Syllabus</th>
+                    <th>Level of Exam</th>
+                    <th>Subjects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Bank SO Syllabus">SBI SO Syllabus</td>
+                    <td data-label="Level of Exam">Preliminary Exam</td>
+                    <td data-label="Subjects">English Language<br>Reasoning Ability<br>Quantitative Aptitude</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank SO Syllabus"></td>
+                    <td data-label="Level of Exam">Mains Exam</td>
+                    <td data-label="Subjects">Professional Knowledge</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank SO Syllabus"></td>
+                    <td data-label="Level of Exam">Interview</td>
+                    <td data-label="Subjects">—</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank SO Syllabus">IBPS SO Syllabus</td>
+                    <td data-label="Level of Exam">Preliminary Exam</td>
+                    <td data-label="Subjects">English Language<br>Reasoning Ability<br>Quantitative Aptitude or General Awareness</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank SO Syllabus"></td>
+                    <td data-label="Level of Exam">Mains Exam</td>
+                    <td data-label="Subjects">Professional Knowledge</td>
+                </tr>
+                <tr>
+                    <td data-label="Bank SO Syllabus"></td>
+                    <td data-label="Level of Exam">Interview</td>
+                    <td data-label="Subjects">—</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 2025 Banking Exam Syllabus -->
+        <h2>2025 Banking Exam Syllabus</h2>
+        <h3>Syllabus Overview</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Quantitative Aptitude</th>
+                    <th>Reasoning</th>
+                    <th>English Language</th>
+                    <th>General/Economy/Banking Awareness</th>
+                    <th>Computer Aptitude</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Quantitative Aptitude">Number Series<br>Simplification & Approx.<br>Ratio & Proportion<br>Partnership<br>Percentage<br>Mixtures & Allegations<br>Average & Ages<br>Profit & Loss<br>Time and Work<br>Pipe and Cistern<br>Simple & Compound Interest<br>Time & Distance<br>Boat & Stream<br>Permutation & Combination<br>Probability<br>Mensuration (2D & 3D)<br>Data Interpretation<br>Caselet DI<br>Quadratic Equation</td>
+                    <td data-label="Reasoning">Puzzle<br>Syllogism<br>Seating Arrangement<br>Input-Output<br>Blood Relation<br>Direction Sense<br>Coding-Decoding<br>Inequalities<br>Data Sufficiency<br>Logical Reasoning</td>
+                    <td data-label="English Language">Reading Comprehension<br>Error Detection<br>Vocabulary<br>Phrase Replacement<br>Sentence Improvement<br>Para Jumbles<br>Cloze Test<br>Spelling Errors<br>Fill in the Blanks<br>Column Based Fillers<br>Sentence Connectors<br>Word Replacement<br>Word Usage<br>Sentence Rearrangement<br>Sentence Completion</td>
+                    <td data-label="General/Economy/Banking Awareness">Banking and Financial Awareness<br>Current Affairs (5–6 Months)<br>Static Awareness</td>
+                    <td data-label="Computer Aptitude">Internet<br>Memory<br>Keyboard Shortcuts<br>Computer Abbreviation<br>Microsoft Office<br>Computer Hardware<br>Computer Software<br>Operating System<br>Networking<br>Computer Fundamentals/Terminologies<br>Number System<br>Basics of Logic Gates</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Bank Prelims Exam Pattern 2025</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>S. No.</th>
+                    <th>Name of Test</th>
+                    <th>No. of Questions</th>
+                    <th>Maximum Marks</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="S. No.">1</td>
+                    <td data-label="Name of Test">English Language</td>
+                    <td data-label="No. of Questions">30</td>
+                    <td data-label="Maximum Marks">30</td>
+                    <td data-label="Duration">20 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="S. No.">2</td>
+                    <td data-label="Name of Test">Reasoning</td>
+                    <td data-label="No. of Questions">35</td>
+                    <td data-label="Maximum Marks">35</td>
+                    <td data-label="Duration">20 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="S. No.">3</td>
+                    <td data-label="Name of Test">Numerical Ability</td>
+                    <td data-label="No. of Questions">35</td>
+                    <td data-label="Maximum Marks">35</td>
+                    <td data-label="Duration">20 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="S. No.">Total</td>
+                    <td data-label="Name of Test"></td>
+                    <td data-label="No. of Questions">100</td>
+                    <td data-label="Maximum Marks">100</td>
+                    <td data-label="Duration">60 Minutes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Bank Mains Exam Pattern 2025 (Clerk)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subjects</th>
+                    <th>No. of Questions</th>
+                    <th>Maximum Marks</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Subjects">English Language</td>
+                    <td data-label="No. of Questions">40</td>
+                    <td data-label="Maximum Marks">40</td>
+                    <td data-label="Duration">35 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Subjects">Quantitative Aptitude</td>
+                    <td data-label="No. of Questions">50</td>
+                    <td data-label="Maximum Marks">50</td>
+                    <td data-label="Duration">45 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Subjects">Reasoning Ability and Computer Aptitude</td>
+                    <td data-label="No. of Questions">50</td>
+                    <td data-label="Maximum Marks">60</td>
+                    <td data-label="Duration">45 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Subjects">General/Financial Awareness</td>
+                    <td data-label="No. of Questions">50</td>
+                    <td data-label="Maximum Marks">50</td>
+                    <td data-label="Duration">35 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Subjects">Total</td>
+                    <td data-label="No. of Questions">190</td>
+                    <td data-label="Maximum Marks">200</td>
+                    <td data-label="Duration">160 Minutes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Bank Mains Exam Pattern 2025 (PO)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Name of the Test</th>
+                    <th>No. of Questions</th>
+                    <th>Maximum Marks</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Sr.No.">1</td>
+                    <td data-label="Name of the Test">Reasoning & Computer Aptitude</td>
+                    <td data-label="No. of Questions">45</td>
+                    <td data-label="Maximum Marks">60</td>
+                    <td data-label="Duration">60 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Sr.No.">2</td>
+                    <td data-label="Name of the Test">English Language</td>
+                    <td data-label="No. of Questions">35</td>
+                    <td data-label="Maximum Marks">40</td>
+                    <td data-label="Duration">40 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Sr.No.">3</td>
+                    <td data-label="Name of the Test">Data Analysis & Interpretation</td>
+                    <td data-label="No. of Questions">35</td>
+                    <td data-label="Maximum Marks">60</td>
+                    <td data-label="Duration">45 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Sr.No.">4</td>
+                    <td data-label="Name of the Test">General Economy & Banking Awareness</td>
+                    <td data-label="No. of Questions">40</td>
+                    <td data-label="Maximum Marks">40</td>
+                    <td data-label="Duration">35 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Sr.No.">Total</td>
+                    <td data-label="Name of the Test"></td>
+                    <td data-label="No. of Questions">155</td>
+                    <td data-label="Maximum Marks">200</td>
+                    <td data-label="Duration">180 Minutes</td>
+                </tr>
+                <tr>
+                    <td data-label="Sr.No.">5</td>
+                    <td data-label="Name of the Test">English Language (Letter Writing & Essay)</td>
+                    <td data-label="No. of Questions">2</td>
+                    <td data-label="Maximum Marks">25</td>
+                    <td data-label="Duration">30 Minutes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Resources Section -->
+        <h2>Resources for Banking Exam Preparation</h2>
+        
+        <div class="resources-section">
+            <h3>✅ Official Websites of Major Banks & Institutions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Institution">IBPS (Clerk, PO, SO, RRB)</td>
+                        <td data-label="Website"><a href="http://www.ibps.in" target="_blank">www.ibps.in</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Institution">SBI (Clerk, PO, SO)</td>
+                        <td data-label="Website"><a href="http://www.sbi.co.in/careers" target="_blank">www.sbi.co.in/careers</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Institution">RBI (Grade B, Assistant)</td>
+                        <td data-label="Website"><a href="http://www.rbi.org.in" target="_blank">www.rbi.org.in</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Institution">NABARD</td>
+                        <td data-label="Website"><a href="http://www.nabard.org" target="_blank">www.nabard.org</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Institution">SEBI</td>
+                        <td data-label="Website"><a href="http://www.sebi.gov.in" target="_blank">www.sebi.gov.in</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Institution">LIC (AAO, ADO)</td>
+                        <td data-label="Website"><a href="http://www.licindia.in" target="_blank">www.licindia.in</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="resources-section">
+            <h3>📲 Top Job Portals for Banking Exams</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Platform">Bankers Adda</td>
+                        <td data-label="Website"><a href="http://www.bankersadda.com" target="_blank">www.bankersadda.com</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Platform">Gradeup / BYJU’S Exam Prep</td>
+                        <td data-label="Website"><a href="http://www.byjusexamprep.com" target="_blank">www.byjusexamprep.com</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Platform">Oliveboard</td>
+                        <td data-label="Website"><a href="http://www.oliveboard.in" target="_blank">www.oliveboard.in</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Platform">Testbook</td>
+                        <td data-label="Website"><a href="http://www.testbook.com" target="_blank">www.testbook.com</a></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Platform">Sarkari Result</td>
+                        <td data-label="Website"><a href="http://www.sarkariresult.com" target="_blank">www.sarkariresult.com</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="resources-section">
+            <h3>📱 Mobile Apps for Instant Notifications</h3>
+            <ul>
+                <li>Adda247</li>
+                <li>Testbook</li>
+                <li>BYJU’S Exam Prep</li>
+                <li>Oliveboard</li>
+                <li>Sarkari Result Official App</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Lightweight canvas animation for subtle sparkles
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const sparkles = [];
+        for (let i = 0; i < 30; i++) {
+            sparkles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 2 + 1,
+                speed: Math.random() * 1 + 0.5
+            });
+        }
+
+        function animateSparkles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            sparkles.forEach(sparkle => {
+                ctx.beginPath();
+                ctx.arc(sparkle.x, sparkle.y, sparkle.size, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255,255,255,0.4)';
+                ctx.fill();
+
+                sparkle.y -= sparkle.speed;
+                if (sparkle.y < 0) sparkle.y = canvas.height;
+            });
+            requestAnimationFrame(animateSparkles);
+        }
+
+        animateSparkles();
+
+        // Resize canvas on window resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
